@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: geezy
+  description: Sample rails applicaiton
+  tags:
+    - app-accelerator
+    - rails
+    - web
+    - tanzu
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=geezy'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: blue-team
